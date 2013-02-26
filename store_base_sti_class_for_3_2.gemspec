@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
     performance implications in certain cases. This gem adds 'store_base_sti_class' configuration options which controls
     whether ActiveRecord will store the base class or the actual class. Default to true for backwards compatibility.
   }
-  s.email = %q{andrew.mutz@appfolio.com}
+  s.email = %q{nazarhussain@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -28,16 +28,16 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/store_base_sti_class_for_3_1.rb",
-    "polymorphic_and_sti_fix_for_rails_3_1.diff",
-    "store_base_sti_class_for_3_1.gemspec",
+    "lib/store_base_sti_class_for_3_2.rb",
+    "polymorphic_and_sti_fix_for_rails_3_2.diff",
+    "store_base_sti_class_for_3_2.gemspec",
     "test/connection.rb",
     "test/helper.rb",
     "test/models.rb",
     "test/schema.rb",
-    "test/test_store_base_sti_class_for_3_1.rb"
+    "test/test_store_base_sti_class_for_3_2.rb"
   ]
-  s.homepage = %q{http://github.com/appfolio/store_base_sti_class_for_3_1}
+  s.homepage = %q{https://github.com/nazarhussain/store_base_sti_class_for_3_2}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.5}
@@ -47,7 +47,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/models.rb",
     "test/schema.rb",
-    "test/test_store_base_sti_class_for_3_1.rb"
+    "test/test_store_base_sti_class_for_3_2.rb"
   ]
 
   if s.respond_to? :specification_version then
