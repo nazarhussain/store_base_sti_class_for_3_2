@@ -1,6 +1,6 @@
 require 'active_record'
 
-if ActiveRecord::VERSION::STRING =~ /^3\.1/
+if ActiveRecord::VERSION::STRING =~ /^3\.2/
   module ActiveRecord
 
     class Base
@@ -192,8 +192,8 @@ if ActiveRecord::VERSION::STRING =~ /^3\.1/
             if reflection.source_macro == :belongs_to
               if reflection.options[:polymorphic]
                 # START PATCH
-                # This line exists to support multiple versions of AR 3.1
-                # original in 3.1.3: key         = reflection.association_primary_key
+                # This line exists to support multiple versions of AR 3.2
+                # original in 3.2.3: key         = reflection.association_primary_key
                 
                 key = (reflection.method(:association_primary_key).arity == 0) ? reflection.association_primary_key : reflection.association_primary_key(klass)
                 # END PATCH

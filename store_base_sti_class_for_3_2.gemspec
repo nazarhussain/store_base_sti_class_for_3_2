@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{store_base_sti_class_for_3_1}
+  s.name = %q{store_base_sti_class_for_3_2}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Andrew Mutz}]
-  s.date = %q{2011-12-23}
+  s.authors = [%q{Nazar Hussain}]
+  s.date = %q{2013-02-26}
   s.description = %q{
     ActiveRecord has always stored the base class in polymorphic _type columns when using STI. This can have non-trivial
     performance implications in certain cases. This gem adds 'store_base_sti_class' configuration options which controls
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.5}
-  s.summary = %q{Modifies ActiveRecord 3.1.x with the ability to store the actual class (instead of the base class) in polymorhic _type columns when using STI}
+  s.summary = %q{Modifies ActiveRecord 3.2.x with the ability to store the actual class (instead of the base class) in polymorhic _type columns when using STI}
   s.test_files = [
     "test/connection.rb",
     "test/helper.rb",
